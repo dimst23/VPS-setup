@@ -1,0 +1,10 @@
+CREATE DATABASE wordpress;
+CREATE DATABASE roundcubemail;
+
+CREATE USER 'username'@localhost IDENTIFIED BY 'chooseapassword';
+CREATE USER 'roundcube'@localhost IDENTIFIED BY 'chooseapassword2';
+
+GRANT ALL PRIVILEGES ON wordpress.* TO 'username'@localhost;
+GRANT ALL PRIVILEGES ON roundcubemail.* TO 'roundcube'@localhost;
+
+FLUSH PRIVILEGES;

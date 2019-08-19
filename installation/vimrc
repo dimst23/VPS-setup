@@ -1,0 +1,30 @@
+set nocompatible " be iMproved, required
+
+set exrc
+set encoding=UTF-8
+
+syntax enable
+set background=dark
+set ruler
+set hidden
+set number
+set showcmd
+set relativenumber " Enable relative numbering
+set incsearch " Higltight search results
+
+set fillchars+=vert:\$
+set laststatus=2
+set smartindent
+
+set shiftwidth=4
+set tabstop=4
+
+" ==== Moving around
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
+" ==== Disable the mouse
+set mouse=c
+
